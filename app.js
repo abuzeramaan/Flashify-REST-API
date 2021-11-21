@@ -27,3 +27,4 @@ app.use(marsRoutes);
 app.use(satelliteRoutes);
 
 app.listen(8080);
+console.log("Your server is running on http://localhost:8080");
