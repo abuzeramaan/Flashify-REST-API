@@ -26,8 +26,4 @@ app.use(apodRoutes);
 app.use(marsRoutes);
 app.use(satelliteRoutes);
 
-// app.get("/", (req, res, next) => {
-//     res.send("HELLO");
-// });
-
 app.listen(8080);

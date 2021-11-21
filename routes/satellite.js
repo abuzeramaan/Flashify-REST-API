@@ -4,6 +4,6 @@ const satelliteController = require("../controllers/satellite");
 
 const router = express.Router();
 
-router.post("/satellite");
+router.get("/satellite", satelliteController.getSatelliteImages);
 
 module.exports = router;
