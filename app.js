@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const apodRoutes = require("./routes/apod");
 const marsRoutes = require("./routes/mars");
 const satelliteRoutes = require("./routes/satellite");
+const searchRoutes = require("./routes/search");
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 app.use(apodRoutes);
 app.use(marsRoutes);
 app.use(satelliteRoutes);
+app.use(searchRoutes);
 
 app.listen(8080);
 console.log("Your server is running on http://localhost:8080");
