@@ -6,7 +6,9 @@ exports.getApod = (req, res, next) => {
     axios
         .get(url)
         .then((response) => {
+            console.log("APOD");
             const data = response.data;
+            res.setHeader("Content-Type", "application/json");
             res.send(JSON.stringify(data));
         })
         .catch((error) => {

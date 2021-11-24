@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 const axios = require("axios");
 
 exports.getMars = (req, res, next) => {
@@ -7,6 +8,7 @@ exports.getMars = (req, res, next) => {
         .get(url)
         .then((response) => {
             const images = response.data.photos;
+            res.setHeader("Content-Type", "application/json");
             res.send(JSON.stringify(images));
             // console.log(response.data.photos);
         })
