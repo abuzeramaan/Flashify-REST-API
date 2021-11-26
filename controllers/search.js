@@ -2,11 +2,11 @@ const fetch = require("node-fetch");
 const axios = require("axios");
 
 exports.getSearch = (req, res, next) => {
-    let searchKeyword = "venus";
-    let url = "https://images-api.nasa.gov//search?q=";
+    let searchKeyword = req.query.q;
+    let url = "https://images-api.nasa.gov/search?q=";
 
     url = url + searchKeyword;
-    // console.log(url);
+    console.log(url);
 
     axios
         .get(url)
