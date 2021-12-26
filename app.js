@@ -8,6 +8,8 @@ const searchRoutes = require("./routes/search");
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
@@ -28,5 +30,5 @@ app.use(marsRoutes);
 app.use(satelliteRoutes);
 app.use(searchRoutes);
 
-app.listen(8080);
-console.log("Your server is running on http://localhost:8080");
+app.listen(PORT);
+console.log("Your server is running on http://localhost:" + PORT);
