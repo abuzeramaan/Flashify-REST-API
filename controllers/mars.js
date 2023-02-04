@@ -3,7 +3,7 @@ const axios = require("axios");
 
 exports.getMars = (req, res, next) => {
     const url =
-        "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=oCCmsqExPBfWPg8gBnjDf22WmPliusk2XPNK7tlO";
+        "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=xonwwAfii1hpckDcgQiMNRu34oXfDuBYhKQsDelk";
     axios
         .get(url)
         .then((response) => {

@@ -2,7 +2,7 @@ const axios = require("axios");
 
 exports.getApod = (req, res, next) => {
     const url =
-        "https://api.nasa.gov/planetary/apod?api_key=oCCmsqExPBfWPg8gBnjDf22WmPliusk2XPNK7tlO";
+        "https://api.nasa.gov/planetary/apod?api_key=xonwwAfii1hpckDcgQiMNRu34oXfDuBYhKQsDelk";
     axios
         .get(url)
         .then((response) => {

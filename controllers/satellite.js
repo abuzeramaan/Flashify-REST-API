@@ -7,7 +7,7 @@ exports.getSatelliteImages = (req, res, next) => {
 
     // console.log(req.query);
 
-    let url = `https://api.nasa.gov/planetary/earth/imagery?lon=${longitude}&lat=${latitude}&date=${date}&dim=0.1&api_key=oCCmsqExPBfWPg8gBnjDf22WmPliusk2XPNK7tlO`;
+    let url = `https://api.nasa.gov/planetary/earth/imagery?lon=${longitude}&lat=${latitude}&date=2014-02-01&api_key=xonwwAfii1hpckDcgQiMNRu34oXfDuBYhKQsDelk`;
 
     console.log(url);
 
